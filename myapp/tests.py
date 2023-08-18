@@ -14,7 +14,7 @@ class TestMyApp(unittest.TestCase):
 
 class TestApp(APITestCase):
     def setUp(self):
-        self.user = User.objects.create(username='testuser')
+        self.user = CustomUser.objects.create(username='testuser')
         self.user.set_password('password')
         self.user.save()
         self.coord = Coords.objects.create(latitude=55.7558, longitude=37.6173)
