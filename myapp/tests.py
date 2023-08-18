@@ -5,7 +5,7 @@ from rest_framework.test import APITestCase
 from django.urls import reverse
 from rest_framework import status
 
-from pereval.models import Pereval, User, Coords, Level, Image
+from myapp.models import Pereval, CustomUser, Coords, Level, Image
 
 
 class TestMyApp(unittest.TestCase):
